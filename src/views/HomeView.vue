@@ -1,4 +1,5 @@
 <template>
+<!-- membuat halaman home -->
   <!-- Container utama dengan latar gelap dan teks terang -->
   <div class="container-fluid py-5" style="background-color: #0d0d0d; min-height: 100vh; color: #eee;">
     <div class="container">
@@ -33,7 +34,7 @@
         </div>
       </div>
 
-      <!-- Tampilkan spinner jika data sedang dimuat -->
+      <!-- Tampilkan spinner jika data sedang dimuat-->
       <div v-if="loading" class="text-center">
         <div class="spinner-border text-light" role="status"></div>
         <p class="mt-2 text-muted">Memuat tiket konser...</p>
