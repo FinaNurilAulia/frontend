@@ -10,7 +10,8 @@
         <button @click="toggleDark" class="btn btn-outline-light">🌙</button>
       </div>
 
-      <!-- Bagian pencarian dan sortir -->
+      
+      <!-- Bagian pencarian dan sortir. -->
       <div class="row mb-4">
         <!-- Input pencarian berdasarkan judul tiket -->
         <div class="col-md-6 mb-2">
