@@ -1,4 +1,5 @@
 <template>
+<!-- membuat halaman admin -->
   <!-- Container utama dengan background gelap dan teks terang -->
   <div class="container-fluid py-5" style="background-color: #0d0d0d; min-height: 100vh; color: #eee;">
     <div class="container">
