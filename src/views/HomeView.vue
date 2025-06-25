@@ -6,7 +6,7 @@
       <!-- Header dan tombol dark mode -->
       <div class="d-flex justify-content-between align-items-center mb-4">
         <h2 class="fw-bold" style="color: #f14ff1;">🎫 Tiket Konser Terbaru</h2>
-        <!-- Tombol dark mode (hanya menampilkan alert) -->
+        <!-- Tombol dark mode (hanya menampilkan pesan peringatan/pop-up saja dan belum benar-benar mengubah tampilannya)) -->
         <button @click="toggleDark" class="btn btn-outline-light">🌙</button>
       </div>
 
@@ -143,7 +143,7 @@ export default {
     formatRupiah(value) {
       return Number(value).toLocaleString('id-ID')
     },
-    // Fungsi toggle dark mode (hanya alert untuk saat ini)
+    // Fungsi toggle dark mode (hanya menampilkan pesan peringatan/pop-up saja dan belum benar-benar mengubah tampilannya)
     toggleDark() {
       alert('Mode gelap sudah aktif secara default 🎧')
     }
