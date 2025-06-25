@@ -135,7 +135,7 @@ export default {
     }
   },
 
-  // Method yang bisa dipanggil di template
+  // Method yang bisa dipanggil di template vue
   methods: {
     // Format angka ke dalam format rupiah
     formatRupiah(value) {
