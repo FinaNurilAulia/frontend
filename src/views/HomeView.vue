@@ -93,7 +93,7 @@ export default {
     }
   },
 
-  // Lifecycle hook saat komponen dimuat pertama kali
+  // Fungsi khusus yang otomatis dijalankan ketika suatu komponen pertama kali muncul di halaman.
   async mounted() {
     try {
       // Ambil data dari backend (Cloudflare Worker)
@@ -102,7 +102,7 @@ export default {
       // Simpan data ke array tickets
       this.tickets = await res.json()
     } catch (err) {
-      // Jika error, tampilkan error di konsol dan aktifkan status error
+      // Jika error, tampilkan error di web dan aktifkan status error
       console.error(err)
       this.error = true
     } finally {
@@ -112,6 +112,7 @@ export default {
   },
 
   // Property yang dihitung otomatis saat data berubah
+  // Sebuah nilai yang tidak ditulis secara langsung, tapi akan dihitung ulang secara otomatis setiap kali data yang dipakainya berubah.
   computed: {
     filteredTickets() {
       let result = this.tickets
